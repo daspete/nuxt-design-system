@@ -1,0 +1,14 @@
+{
+  "name": "nuxt",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "dev": "nuxt"
+  },
+  "dependencies": {
+    "dotenv": "^6.0.0",
+    "nuxt": "^1.4.1",
+    "vue-design-system": "file:/var/www/develop/vue-design-system"
+  }
+}
