@@ -4,11 +4,13 @@
 
 - change the package name in the ``` package.json ``` file
 
-- Install dependencies with ``` yarn ``` or ``` npm install ```
+- Install dependencies with ``` npm install ```
+
+- Change the config file: ``` /build/webpack.system.conf.js ``` (search for the variable ``` libraryTarget ``` and change the value to ``` commonjs2 ```)
 
 - Create your design elements, patterns and templates
 
-- Compile the production design system with ``` yarn run build:system ``` or ``` npm run build:system ```
+- Compile the production design system with ``` npm run build:system ```
 
 - install your created design system into your nuxt.js project with ``` yarn add file:[path-to-your-design-system] ``` or ``` npm install --save file:[path-to-your-design-system] ```
 
@@ -16,8 +18,8 @@
 
 ``` js
 import Vue from 'vue'
-import system from 'vue-design-system'
-import 'vue-design-system/dist/system.css'
+import system from '[your-design-system-name]'
+import '[your-design-system-name]/dist/system.css'
 
 Vue.use(system)
 ```
@@ -25,7 +27,7 @@ Vue.use(system)
 
 ``` js
 plugins: [
-    { src: '~/plugins/designsystem', ssr: false }
+    ['~/plugins/designsystem']
 ]
 ```
 

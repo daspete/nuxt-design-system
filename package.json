@@ -8,7 +8,6 @@
   },
   "dependencies": {
     "dotenv": "^6.0.0",
-    "nuxt": "^1.4.1",
-    "vue-design-system": "file:/var/www/develop/vue-design-system"
+    "nuxt": "^2.0.0"
   }
 }
